@@ -1,0 +1,127 @@
+<!-- Contact Section - Pius’ Hemophilia Chronicles -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="intro">
+      Have questions, need support, or want to collaborate?  
+      We’d love to hear from you.
+    </p>
+
+    <!-- Contact Form -->
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Direct Contact Options -->
+    <div class="direct-links">
+      <a href="mailto:hemophiliachronicles@gmail.com" class="btn">📧 Email Us</a>
+      <a href="tel:+254796687926" class="btn">📞 Call Us</a>
+      <a href="https://wa.me/message/43BNLBKQJHZPJ1" target="_blank" class="btn">💬 WhatsApp</a>
+    </div>
+
+    <p id="formStatus" class="status"></p>
+  </div>
+</section>
+
+<style>
+  /* ===== Contact Section Styles ===== */
+  #contact {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  #contact .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #contact .section-title {
+    font-size: 2rem;
+    color: var(--primary, #b22222);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #contact .intro {
+    margin-bottom: 30px;
+    color: var(--text-light, #555);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+  }
+
+  /* Direct Contact Buttons */
+  .direct-links {
+    margin-top: 20px;
+  }
+
+  .direct-links .btn {
+    margin: 8px;
+    padding: 12px 20px;
+    background: var(--primary, #b22222);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+
+  .direct-links .btn:hover {
+    background: #8b1a1a;
+  }
+
+  /* Status Message */
+  .status {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: var(--text-dark, #222);
+  }
+</style>
+
+<script>
+  // Contact form handler (demo only)
+  const form = document.getElementById('contactForm');
+  const statusMsg = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      statusMsg.textContent = "❌ Please fill in all fields.";
+      statusMsg.style.color = "red";
+      return;
+    }
+
+    // Demo response (replace with backend later)
+    statusMsg.textContent = "✅ Thank you " + name + "! Your message has been sent.";
+    statusMsg.style.color = "green";
+    form.reset();
+  });
+</script>

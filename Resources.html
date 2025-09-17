@@ -1,0 +1,112 @@
+<!-- Resources Section - Pius’ Hemophilia Chronicles -->
+<section id="resources">
+  <div class="container">
+    <h2 class="section-title">Resources</h2>
+    <p class="intro">
+      Explore our collection of helpful guides, toolkits, and links designed for patients, caregivers, and partners in the hemophilia community.
+    </p>
+
+    <div class="resources-grid">
+      <!-- Resource 1 -->
+      <div class="resource-card">
+        <h3>📘 Patient Handbook</h3>
+        <p>A practical guide for managing hemophilia day-to-day with tips for health, school, and family life.</p>
+        <a href="About.html" class="btn">Download PDF</a>
+      </div>
+
+      <!-- Resource 2 -->
+      <div class="resource-card">
+        <h3>🎥 Video Library</h3>
+        <p>Access stories, education, and tutorials from Voices of Shujaa & How to HemoShujaa.</p>
+        <a href="https://youtube.com/@howtohemoshujaa" target="_blank" class="btn">Watch Now</a>
+      </div>
+
+      <!-- Resource 3 -->
+      <div class="resource-card">
+        <h3>🌍 Partner Links</h3>
+        <p>Connect with organizations and networks supporting bleeding disorders worldwide.</p>
+        <a href="Partnership.html" class="btn">Explore Partners</a>
+      </div>
+
+      <!-- Resource 4 -->
+      <div class="resource-card">
+        <h3>🧠 Mental Health Toolkit</h3>
+        <p>Guides and exercises to support emotional wellbeing and resilience for patients and families.</p>
+        <a href="Call_for_collaboration.html" class="btn">Get Toolkit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== Resources Section Styles ===== */
+  #resources {
+    padding: 60px 20px;
+    background: var(--secondary, #f9f9f9);
+    text-align: center;
+  }
+
+  #resources .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  #resources .section-title {
+    font-size: 2rem;
+    color: var(--primary, #b22222);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #resources .intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: var(--text-light, #555);
+  }
+
+  /* Grid Layout */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .resource-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+
+  .resource-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary, #b22222);
+  }
+
+  .resource-card p {
+    margin-bottom: 15px;
+    color: var(--text-light, #555);
+  }
+
+  .resource-card .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--primary, #b22222);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .resource-card .btn:hover {
+    background: #8b1a1a;
+  }
+</style>

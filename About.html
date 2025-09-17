@@ -1,0 +1,210 @@
+<!-- Build a modern, responsive NGO-style homepage for "Pius’ Hemophilia Chronicles"
+Use HTML, CSS, and vanilla JavaScript (no frameworks).
+Follow this structure and content exactly:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pius’ Hemophilia Chronicles</title>
+  <style>
+    /* ====== Basic Styles ====== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: url('IMG_7463.JPG') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+    h1, h2, h3 {
+      margin: 0 0 15px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: crimson;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      flex: 1 1 280px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #ddd;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      header { padding: 60px 20px; }
+      .cards { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <div class="content">
+      <h1>Turning Stories Into Strength</h1>
+      <p>Advocacy, Awareness & Action for Hemophilia Communities</p>
+      <a href="https://youtube.com/@voicesofshujaa?si=K2D03qGM7eO656ef" class="btn">🎤 Explore Voices of Shujaa</a>
+      <a href="https://youtube.com/@howtohemoshujaa?si=mk1BMwG9dskXmpGy" class="btn">📺 Learn from How to HemoShujaa</a>
+      <a href="mailto:hemophiliachronicles@gmail.com" class="btn">🤝 Partner With Us</a>
+    </div>
+  </header>
+
+  <!-- Welcome -->
+  <section>
+    <h2>Welcome to Pius’ Hemophilia Chronicles</h2>
+    <p>We are a community-driven initiative dedicated to empowering people living with hemophilia and other bleeding disorders. Through awareness, advocacy, peer counseling, and storytelling, we connect patients, families, and partners to create lasting impact.</p>
+  </section>
+
+  <!-- About Us -->
+  <section>
+    <h2>About Us</h2>
+    <p><strong>Who We Are:</strong> A movement founded by Pius, a hemophilia advocate and peer counselor.</p>
+    <p><strong>What We Do:</strong></p>
+    <ul>
+      <li>🎤 Voices of Shujaa – real stories of resilience and hope.</li>
+      <li>📺 How to HemoShujaa – practical health education and daily living tips.</li>
+      <li>🤝 Peer Support – guidance and counseling for patients and families.</li>
+    </ul>
+    <p><strong>Our Vision:</strong> A world where no patient feels alone or invisible.</p>
+    <a href="About.html" class="btn">Learn More About Us →</a>
+  </section>
+
+  <!-- Programs -->
+  <section>
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🎤 Voices of Shujaa</h3>
+        <p>A storytelling platform where patients and caregivers share their journeys to fight stigma and build community.</p>
+        <a href="https://youtube.com/@voicesofshujaa?si=pKU4WxMJ8hOlyrby" class="btn">Watch Now</a>
+      </div>
+      <div class="card">
+        <h3>📺 How to HemoShujaa</h3>
+        <p>An educational channel offering tips, strategies, and resources for living with a blood disorder.</p>
+        <a href="https://youtube.com/@howtohemoshujaa?si=YOYEVlJLAOyFGYlB" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>🤝 Peer Counseling & Support</h3>
+        <p>Safe spaces and one-on-one guidance from someone who understands the journey.</p>
+        <a href="tel:+254796687926" class="btn">Get Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Advocacy -->
+  <section>
+    <h2>Impact & Advocacy</h2>
+    <ul>
+      <li>Raising awareness in schools, hospitals, and communities.</li>
+      <li>Providing reliable information for patients and families.</li>
+      <li>Partnering with organizations for better health access.</li>
+    </ul>
+    <a href="#" class="btn">Read Our Advocacy Stories →</a>
+  </section>
+
+  <!-- Call for Collaboration -->
+  <section>
+    <h2>Call for Collaboration</h2>
+    <blockquote>"Together, we can break barriers for people living with bleeding disorders."</blockquote>
+    <ul>
+      <li>Partner with us for awareness campaigns</li>
+      <li>Support our youth programs & camps</li>
+      <li>Collaborate on mental health and resilience initiatives</li>
+    </ul>
+    <a href="#" class="btn">Become a Partner →</a>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section>
+    <h2>Stay Connected</h2>
+    <p>"Stay connected with our updates, patient stories, and upcoming events."</p>
+    <form id="newsletterForm">
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Quick Links: 
+      <a href="#">Home</a> | 
+      <a href="#">About</a> | 
+      <a href="#">Programs</a> | 
+      <a href="#">Partnerships</a> | 
+      <a href="#">Resources</a> | 
+      <a href="#">Contact</a>
+    </p>
+    <p>
+      🌐 Follow us: 
+      <a href="https://youtube.com/@howtohemoshujaa?si=xVy2TZMBeqd1h-Ov">YouTube</a> 
+      <a href="https://www.instagram.com/hemoshujaa?igsh=MXJiem5xeWZoandvNA==">Instagram</a> 
+      <a href="https://www.facebook.com/share/1CcF64c83S/">Facebook</a> 
+      <a href="https://x.com/PiusAsimuge?t=WxspgUe8E_n7e6jBggN6xg&s=09">X</a> 
+      <a href="https://wa.me/message/43BNLBKQJHZPJ1">WhatsApp</a>
+    </p>
+    <p>“Pius’ Hemophilia Chronicles – Connecting patients, families, and caregivers through stories of strength.”</p>
+  </footer>
+
+  <script>
+    // Basic newsletter form handler (no backend yet)
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      alert('Thank you for subscribing, ' + email + '!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
